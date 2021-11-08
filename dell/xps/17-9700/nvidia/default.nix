@@ -14,7 +14,7 @@
   services.xserver.videoDrivers = lib.mkDefault [ "nvidia" ];
   hardware.nvidia.modesetting.enable = lib.mkDefault true;
   hardware.nvidia.prime = {
-    enable = lib.mkDefault true;
+    sync.enable = lib.mkDefault true;
     nvidiaBusId = lib.mkDefault "PCI:1:0:0";
     intelBusId = lib.mkDefault "PCI:0:2:0";
   };
